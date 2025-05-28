@@ -13,7 +13,7 @@ Try the **live demo** yourself here:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Samcancode15/Todo-App.git
+   git clone https://github.com/Samcancode15/Todo-App-Website.git
    cd Todo-App
    ```
 

@@ -29,7 +29,7 @@ A simple and minimal To-Do app that helps you manage your tasks with ease. It fe
 
 ## Credits
 
-The UI design of this app is inspired by a [Dribbble design](https://dribbble.com/shots/24425951-Clean-Minimal-Todo-List-Design) by [Designer Name](https://dribbble.com/arknnx_). All visual credit goes to them for the original concept.
+The UI design of this app is inspired by a [Dribbble design](https://dribbble.com/shots/24425951-Clean-Minimal-Todo-List-Design) by [Arkan Naufal](https://dribbble.com/arknnx_). All visual credit goes to them for the original concept.
 
 ## License
 

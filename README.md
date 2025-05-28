@@ -14,7 +14,7 @@ Try the **live demo** yourself here:
 
    ```bash
    git clone https://github.com/Samcancode15/Todo-App-Website.git
-   cd Todo-App
+   cd Todo-App-Website
    ```
 
 2. Install the required dependencies:

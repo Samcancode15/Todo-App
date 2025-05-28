@@ -2,6 +2,12 @@
 
 A simple and minimal To-Do app that helps you manage your tasks with ease. It features a clean user interface, lets you quickly add, complete, and delete tasks, and saves everything in your browser’s local storage so your list stays intact across sessions.
 
+## Demo
+
+Try the **live demo** yourself here:
+
+[📋 Live Demo - Minimalistic Todo App](https://todo-app-taupe-three-89.vercel.app/)
+
 ## How to Use
 
 1. Clone the repository:

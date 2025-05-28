@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { todo } from "./types/types";
 import "./App.css";
 
 function App() {
-  const [todos, setTodos] = useState<todo[]>([]);
+  const [todos, setTodos] = useState<todo[]>(() => {
+    const stored = localStorage.getItem("todos");
+    return stored ? JSON.parse(stored) : [];
+  });
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [input, setInput] = useState<string>("");
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     console.log("submit clicked");
@@ -72,7 +79,7 @@ function App() {
             >
               <input
                 type="checkbox"
-                className="h-5 w-5 text-[#4F4F4F] ml-2 mr-3 font-semibold cursor-pointer"
+                className="h-5 w-5 accent-[#4F4F4F] ml-2 mr-3 font-semibold cursor-pointer"
                 checked={todo.completed}
                 onChange={() => {
                   const updatedTodos = [...todos];
@@ -105,6 +112,13 @@ function App() {
         <div className="text-[#4F4F4F] italic font-semibold text-left mb-3">
           Your remaining todos :{" "}
           {todos.filter((todo) => !todo.completed).length}
+        </div>
+
+        <div className="text-[#9F9F9F] text-normal italic mt-3">
+          <p className="text-left">
+            "Doing what you love is the cornerstone of having abundance in your
+            life" - Wayne Dyer
+          </p>
         </div>
 
         <div
